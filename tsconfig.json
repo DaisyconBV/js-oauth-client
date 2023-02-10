@@ -1,0 +1,24 @@
+{
+	"compilerOptions": {
+		"baseUrl": "./",
+		"declaration": true,
+		"lib": [
+			"es2020",
+			"dom",
+			"dom.iterable"
+		],
+		"moduleResolution": "node",
+		"paths": {
+			"src/*": [
+				"./src/*"
+			]
+		},
+		"sourceMap": true,
+		"typeRoots": [
+			"node_modules/@types",
+			"types/"
+		]
+	},
+	"include": ["src/**/*.ts"],
+	"exclude": ["node_modules", "tests"]
+}
