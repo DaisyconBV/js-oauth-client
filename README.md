@@ -35,4 +35,9 @@ console.log(accessTokens);
 ```
 
 ## Running as CLI script
-# js-oauth-client
+
+After installation, you can run the client as follows
+
+```shell
+npx daisycon-oauth-cli --clientId=CLIENT_ID --clientSecret=CLIENT_SECRET --outputFile="./tokens.json"
+```
