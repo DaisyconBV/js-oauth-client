@@ -1,6 +1,7 @@
 {
 	"extends": "./tsconfig.json",
 	"compilerOptions": {
+		"esModuleInterop": true,
 		"module": "es2020",
 		"outDir": "./lib/es6",
 		"target": "es5"

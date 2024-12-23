@@ -4,12 +4,12 @@
 
 ### Using yarn
 ```text
-yarn add @daisycon/js-oauth-client
+yarn add @daisycon/oauth-cli-client
 ```
 
 ### Using npm
 ```text
-npm install @daisycon/js-oauth-client
+npm install @daisycon/oauth-cli-client
 ```
 
 ## Usage in your code
@@ -17,7 +17,7 @@ npm install @daisycon/js-oauth-client
 To start the oAuth request in your initial starting page add the following snippit
 
 ```typescript
-import {OauthService, PkceService} from '@daisycon/js-oauth-client';
+import {OauthService, PkceService} from '@daisycon/oauth-cli-client';
 
 const oAuthService: OauthService = new OauthService(new PkceService());
 oAuthService.startAuthorizationRequest(YOUR_CLIENT_ID, YOUR_AUTHORIZED_REDIRECT_URI);
@@ -27,7 +27,7 @@ Then on the authorized redirect URI add the following snippet.
 Then store the returned tokens somewhere safe.
 
 ```typescript
-import {AccessTokenResponseInterface, OauthService, PkceService} from '@daisycon/js-oauth-client';
+import {AccessTokenResponseInterface, OauthService, PkceService} from '@daisycon/oauth-cli-client';
 
 const oAuthService: OauthService = new OauthService(new PkceService());
 const accessTokens: AccessTokenResponseInterface = oAuthService.startAccessTokenExchange(YOUR_CLIENT_ID, YOUR_AUTHORIZED_REDIRECT_URI);
